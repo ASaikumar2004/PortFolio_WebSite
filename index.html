@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sai Kumar - Java Full Stack Developer Portfolio">
+    <title>Sai Kumar | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">Sai<span> Kumar</span></a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Technical Skills</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
+            <a href="#contact" class="hire-btn">
+                Hire me <span>→</span>
+            </a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="availability">
+                    <span class="availability-dot"></span>
+                    AVAILABLE FOR WORK
+                </p>
+
+                <h1>Hi, I'm <span>Sai Kumar</span></h1>
+
+                <p class="description">
+                    Java Full Stack Developer building modern web applications.
+                    I develop digital experiences using Java, Spring Boot,
+                    Angular and MySQL — clean, reliable and user-friendly.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#work" class="primary-btn">
+                        View my work <span> > </span>
+                    </a>
+                    <a href="#contact" class="secondary-btn">
+                        Get in touch
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h2>Java</h2>
+                        <p>Core development</p>
+                    </div>
+
+                    <div class="stat">
+                        <h2>Full Stack</h2>
+                        <p>Web applications</p>
+                    </div>
+
+                    <div class="stat">
+                        <h2>Projects</h2>
+                        <p>Hands-on learning</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-area">
+                <div class="image-glow"></div>
+
+                <div class="profile-image">
+                    <img src="Assets/profile.png" alt="Sai Kumar profile photo">
+                </div>
+
+                <div class="project-badge">
+                    <span class="badge-dot"></span>
+                    Open to projects
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+
+            <p class="section-label">WHAT I DO</p>
+            <h2>Services</h2>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="13" rx="1.5" />
+                            <path d="M8 21h8M12 17v4M3 13h18" />
+                        </svg>
+                    </div>
+
+                    <h3>Web Development</h3>
+                    <p>
+                        Responsive websites built with HTML, CSS and JavaScript,
+                        focusing on clean layouts and accessible user experiences.
+                    </p>
+                </article>
+
+                <article class="service-card featured-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m8 8-5 4 5 4" />
+                            <path d="m16 8 5 4-5 4" />
+                            <path d="m14 4-4 16" />
+                        </svg>
+                    </div>
+
+                    <h3>Java Full Stack</h3>
+                    <p>
+                        Web application development using Java, JDBC, Servlets,
+                        JSP, Spring Boot and database technologies.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3v9h9" />
+                            <path d="M20.5 15A9 9 0 1 1 9 3.5" />
+                            <path d="M15 3.5A9 9 0 0 1 20.5 9H15z" />
+                        </svg>
+                    </div>
+
+                    <h3>Frontend Interfaces</h3>
+                    <p>
+                        Clean, responsive interfaces that present information
+                        effectively on desktop and mobile devices.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- EDUCATION SECTION -->
+        <section class="education-section" id="education">
+            <div class="education-container">
+
+                <div class="education-heading">
+                    <span class="section-label">MY JOURNEY</span>
+                    <h2>Education & Learning</h2>
+                    <p>
+                        My academic journey and the foundation
+                        behind my career in software development.
+                    </p>
+                </div>
+
+                <div class="education-timeline">
+
+                    <!-- B.Tech -->
+                    <article class="education-item">
+                        <div class="timeline-marker"></div>
+
+                        <div class="education-card">
+                            <div class="education-meta">
+                                <span class="education-type">BACHELOR'S DEGREE</span>
+                                <span class="education-status">Completed</span>
+                            </div>
+
+                            <h3>B.Tech — Computer Science</h3>
+
+                            <h4>
+                                Godavari Institute of Engineering and Technology
+                            </h4>
+
+                            <p>
+                                Developed a foundation in computer science,
+                                programming, and software development.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Intermediate -->
+                    <article class="education-item">
+                        <div class="timeline-marker"></div>
+
+                        <div class="education-card">
+                            <div class="education-meta">
+                                <span class="education-type">INTERMEDIATE</span>
+                                <span class="education-status">Completed</span>
+                            </div>
+
+                            <h3>Intermediate — MPC / Your Stream</h3>
+
+                            <h4>Your Junior College Name</h4>
+
+                            <p>
+                                Built a foundation in core academic subjects
+                                and prepared for higher education.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Schooling -->
+                    <article class="education-item">
+                        <div class="timeline-marker"></div>
+
+                        <div class="education-card">
+                            <div class="education-meta">
+                                <span class="education-type">SCHOOLING</span>
+                                <span class="education-status">Completed</span>
+                            </div>
+
+                            <h3>Secondary School Certificate (SSC)</h3>
+
+                            <h4>Your School Name</h4>
+
+                            <p>
+                                Completed secondary education and developed
+                                the academic fundamentals for further studies.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TECHNICAL SKILLS SECTION -->
+        <section class="technical-skills" id="skills">
+            <div class="technical-skills-container">
+
+                <div class="skills-heading">
+                    <span class="section-label">MY EXPERTISE</span>
+                    <h2>Technical Skills</h2>
+                    <p>
+                        My technical knowledge and the tools I use
+                        to build web applications.
+                    </p>
+                </div>
+
+                <div class="technical-skills-grid">
+
+                    <!-- Programming Skills -->
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JDBC</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Servlets &amp; JSP</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Spring Boot</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Angular</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Skills -->
+                    <div class="skill-category">
+                        <h3>Database &amp; Tools</h3>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git &amp; GitHub</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Hibernate</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-progress" style="--progress: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SELECTED WORK: ONLY THREE PROJECTS -->
+        <section class="work-section" id="work">
+
+            <div class="work-heading">
+                <div>
+                    <p class="section-label">PORTFOLIO</p>
+                    <h2>Selected work</h2>
+                </div>
+
+                <a href="projects.html" class="all-projects">
+                    All projects <span>→</span>
+                </a>
+            </div>
+
+            <div class="work-grid">
+
+                <!-- PROJECT 1: LARGE LEFT CARD -->
+                <article class="work-card work-card-large">
+                    <div class="work-image">
+                        <img src="Assets/votenow.png" alt="VoteNow Online Polling System">
+                    </div>
+
+                    <div class="work-details">
+                        <div class="project-tags">
+                            <span class="tag tag-active">AWS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">DynamoDB</span>
+                        </div>
+
+                        <h3>VoteNow – Online Polling System</h3>
+
+                        <p>
+                            A cloud-based online polling system developed using HTML, CSS,
+                            JavaScript and AWS services. The application allows users to
+                            register and participate in polls through a simple and
+                            user-friendly interface. It uses Amazon S3 to host the frontend,
+                            API Gateway to handle requests, AWS Lambda to process voting
+                            operations and DynamoDB to store poll data and voting records.
+                            The system supports multiple polls, vote submission and
+                            visualization of results using interactive charts. It also
+                            includes an admin interface for managing polls and helps make
+                            the voting process accessible, organized and efficient.
+                        </p>
+
+                        <p>
+                            The application allows users to
+                            register and participate in polls through a simple and
+                            user-friendly interface. It uses Amazon S3 to host the frontend,
+                            API Gateway to handle requests, AWS Lambda to process voting
+                            operations and DynamoDB to store poll data and voting records.
+                            The system supports multiple polls, vote submission and
+                            visualization of results using interactive charts. It also
+                            includes an admin interface for managing polls and helps make
+                            the voting process accessible, organized and efficient.
+                        </p>
+
+                        <a href="#" class="case-link">View project →</a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2: TOP RIGHT -->
+                <article class="work-card">
+                    <div class="work-image">
+                        <img src="Assets/library.png" alt="Public Library website">
+                    </div>
+
+                    <div class="work-details">
+                        <div class="project-tags">
+                            <span class="tag tag-active">Angular</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+
+                        <h3>Public Library</h3>
+
+                        <p>
+                            A library website developed with Angular, focusing
+                            on reusable components, page layouts and frontend
+                            development.
+                        </p>
+
+                        <a href="#" class="case-link">View project →</a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3: BOTTOM RIGHT -->
+                <article class="work-card">
+                    <div class="work-image">
+                        <img src="Assets/minthillcafe.png" alt="MinthillCafe website">
+                    </div>
+
+                    <div class="work-details">
+                        <div class="project-tags">
+                            <span class="tag tag-active">Angular</span>
+                            <span class="tag">Web Design</span>
+                        </div>
+
+                        <h3>MinthillCafe</h3>
+
+                        <p>
+                            A cafe website built with Angular, presenting cafe
+                            information through a clean and responsive layout.
+                        </p>
+
+                        <a href="#" class="case-link">View project →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+
+                <!-- Left: Profile Image -->
+                <div class="about-image">
+                    <img src="Assets/profile.png" alt="Sai Kumar - Java Full Stack Developer">
+                </div>
+
+                <!-- Right: About Content -->
+                <div class="about-content">
+                    <span class="section-label">ABOUT ME</span>
+
+                    <h2>A bit about<br>who I am</h2>
+
+                    <p>
+                        I'm Sai Kumar, an aspiring Java Full Stack Developer
+                        passionate about building modern, responsive, and
+                        user-friendly web applications. I have a foundation in
+                        Java, frontend development, and database technologies.
+                    </p>
+
+                    <p>
+                        I enjoy turning ideas into practical applications,
+                        solving programming challenges, and continuously
+                        improving my development skills. I'm currently
+                        strengthening my knowledge of Java, Spring Boot,
+                        Hibernate, and full-stack web development.
+                    </p>
+
+                    <!-- Skills -->
+                    <div class="about-skills">
+                        <span class="skills-title">TECH STACK &amp; TOOLS</span>
+
+                        <div class="skills-list">
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">JDBC</span>
+                            <span class="skill-badge">Servlets</span>
+                            <span class="skill-badge">JSP</span>
+                            <span class="skill-badge">Spring Boot</span>
+                            <span class="skill-badge">Hibernate</span>
+                            <span class="skill-badge">HTML</span>
+                            <span class="skill-badge">CSS</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">Angular</span>
+                            <span class="skill-badge">Git &amp; GitHub</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="about-cta">
+                        Let's Connect <span>↗</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- REVIEWS SECTION -->
+        <section class="reviews-section" id="reviews">
+            <div class="reviews-container">
+
+                <div class="reviews-heading">
+                    <span class="section-label">SOCIAL PROOF</span>
+                    <h2>What clients say</h2>
+                </div>
+
+                <div class="reviews-grid">
+
+                    <!-- Review 1 -->
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="review-text">
+                            "Sai delivered our website project with great attention
+                            to detail. The design was clean, responsive, and easy
+                            to use. I would happily recommend his work."
+                        </p>
+
+                        <div class="review-author">
+                            <img src="Assets/reviewer1.jpg" alt="Reviewer profile" loading="lazy">
+
+                            <div>
+                                <h3>Project Client</h3>
+                                <span>Website Development</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Review 2 -->
+                    <article class="review-card featured-review">
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="review-text">
+                            "Working with Sai was a smooth experience.
+                            He understood the requirements, communicated clearly,
+                            and focused on creating a practical solution."
+                        </p>
+
+                        <div class="review-author">
+                            <img src="Assets/reviewer2.jpg" alt="Reviewer profile" loading="lazy">
+
+                            <div>
+                                <h3>Project Collaborator</h3>
+                                <span>Full Stack Project</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Review 3 -->
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="review-text">
+                            "Sai showed dedication throughout the project.
+                            He paid attention to the requirements and worked
+                            toward delivering a polished final result."
+                        </p>
+
+                        <div class="review-author">
+                            <img src="Assets/reviewer3.jpg" alt="Reviewer profile" loading="lazy">
+
+                            <div>
+                                <h3>Project Teammate</h3>
+                                <span>Application Development</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+
+                <!-- Left side -->
+                <div class="contact-info">
+                    <span class="section-label">GET IN TOUCH</span>
+
+                    <h2>Let's work<br>together</h2>
+
+                    <p class="contact-description">
+                        I'm open to Java Full Stack Developer opportunities,
+                        internships, and exciting web development projects.
+                        Have an idea or an opportunity? Let's connect.
+                    </p>
+
+                    <div class="contact-links">
+
+                        <a href="ampolusaikumar2004@gmail.com" class="contact-link">
+                            <span class="contact-icon">&#9993;</span>
+                            <span>ampolusaikumar2004@gmail.com</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/ampolu-saikumar" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">
+                            <span class="contact-icon linkedin-icon">in</span>
+                            <span>Connect on LinkedIn</span>
+                        </a>
+
+                        <a href="https://github.com/ASaikumar2004" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <span class="contact-icon github-icon">GH</span>
+                            <span>View my GitHub</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Right side: Contact form -->
+                <form class="contact-form" id="contact">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Name *</label>
+                            <input type="text" id="contactName" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email *</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" name="subject"
+                            placeholder="Job opportunity / Project inquiry">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="message" placeholder="Tell me about the opportunity..."
+                            rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit">
+                        Send message <span>&rarr;</span>
+                    </button>
+
+                    <p class="form-status" id="formStatus" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <div class="footer-left">
+                    <p>
+                        &copy; <span id="footerYear"></span> Sai Kumar.
+                        All rights reserved.
+                    </p>
+
+                    <p class="footer-credit">
+                        Designed and developed by
+                        <a href="#home">Sai Kumar</a>
+                    </p>
+                </div>
+
+                <div class="footer-right">
+                    <span>Built with HTML, CSS &amp; JavaScript</span>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
