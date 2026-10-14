@@ -87,45 +87,42 @@ if ("IntersectionObserver" in window) {
 }
 
 
-
-
-
 const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
+const sendButton = contactForm.querySelector(".contact-submit");
 
-if (contactForm && formStatus) {
-    contactForm.addEventListener("submit", function (event) {
-        event.preventDefault();
+// Replace these with your EmailJS details
+const SERVICE_ID = "service_e9513xc";
+const TEMPLATE_ID = "template_ncc5efg";
+const PUBLIC_KEY = "WH93x8LeFF7M8Ux0q";
 
-        const name = document.getElementById("contactName").value.trim();
-        const email = document.getElementById("contactEmail").value.trim();
-        const subject =
-            document.getElementById("contactSubject").value.trim() ||
-            "Portfolio inquiry";
+contactForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
 
-        const message = document
-            .getElementById("contactMessage")
-            .value.trim();
+    sendButton.disabled = true;
+    sendButton.textContent = "Sending...";
+    formStatus.textContent = "";
 
-        const recipient = "your-email@example.com";
+    try {
+        await emailjs.sendForm(
+            SERVICE_ID,
+            TEMPLATE_ID,
+            contactForm,
+            { publicKey: PUBLIC_KEY }
+        );
 
-        const body =
-            `Name: ${name}\n` +
-            `Email: ${email}\n\n` +
-            `Message:\n${message}`;
+        formStatus.textContent = "Message sent successfully!";
+        contactForm.reset();
 
-        const mailtoLink =
-            `mailto:${recipient}` +
-            `?subject=${encodeURIComponent(subject)}` +
-            `&body=${encodeURIComponent(body)}`;
-
+    } catch (error) {
+        console.error("EmailJS error:", error);
         formStatus.textContent =
-            "Opening your email application...";
-
-        window.location.href = mailtoLink;
-    });
-}
-
+            "Unable to send your message. Please try again.";
+    } finally {
+        sendButton.disabled = false;
+        sendButton.innerHTML = 'Send message <span>&rarr;</span>';
+    }
+});
 
 
 const footerYear = document.getElementById("footerYear");
