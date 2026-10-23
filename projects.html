@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All Projects & Works - Sai Kumar | Java Full Stack Developer">
+    <title>All Projects | Sai Kumar Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="projects-page">
+
+    <!-- PAGE PRELOADER -->
+    <div class="page-preloader" id="pagePreloader" aria-hidden="true">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                Sai<span> Kumar</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+            <p class="preloader-text">Loading Projects...</p>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html#home" class="logo">Sai<span> Kumar</span></a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#skills">Technical Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact Me</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
+            <a href="index.html" class="back-home-btn" aria-label="Back to Home">
+                <span class="back-arrow">←</span>
+                <span class="btn-text-full">Back to Home</span>
+                <span class="btn-text-short">Home</span>
+            </a>
+            <a href="index.html#contact" class="hire-btn">
+                Hire me <span>→</span>
+            </a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+        <!-- PROJECTS HERO SECTION -->
+        <section class="projects-hero">
+            <div class="projects-hero-container">
+                <div class="hero-badge">
+                    <span class="availability-dot"></span>
+                    PORTFOLIO SHOWCASE
+                </div>
+                <h1 class="projects-title">All <span>Projects</span> &amp; Works</h1>
+                <p class="projects-subtitle">
+                    A comprehensive collection of full-stack Java systems, cloud architectures, Angular single-page
+                    applications, and interactive frontend platforms I have designed and developed.
+                </p>
+
+                <!-- CONTROLS: SEARCH & FILTERS -->
+                <div class="projects-controls">
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="projectSearch" placeholder="Search projects by name, tech..."
+                            autocomplete="off">
+                        <button id="clearSearch" class="clear-search" aria-label="Clear search"
+                            style="display: none;">✕</button>
+                    </div>
+
+                    <div class="filter-tabs" id="filterTabs">
+                        <button class="filter-btn active" data-filter="all">All Projects <span
+                                class="filter-count">16</span></button>
+                        <button class="filter-btn" data-filter="java">Java &amp; Full Stack <span
+                                class="filter-count">5</span></button>
+                        <button class="filter-btn" data-filter="angular">Angular &amp; SPAs <span
+                                class="filter-count">3</span></button>
+                        <button class="filter-btn" data-filter="frontend">Frontend &amp; UI <span
+                                class="filter-count">6</span></button>
+                        <button class="filter-btn" data-filter="cloud">Cloud &amp; AWS <span
+                                class="filter-count">2</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS GRID SECTION -->
+        <section class="all-projects-section">
+            <div class="all-projects-container">
+
+                <div class="projects-grid-full" id="projectsGrid">
+
+                    <!-- PROJECT 1: VOTENOW (AWS SERVERLESS) -->
+                    <article class="project-showcase-card reveal" data-category="cloud java"
+                        data-title="votenow online polling system aws lambda dynamodb serverless api gateway">
+                        <div class="project-card-image">
+                            <img src="assets/votenow.png" alt="VoteNow Online Polling System preview">
+                            <span class="project-category-badge cloud">AWS Cloud</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">AWS Lambda</span>
+                                <span class="tag">DynamoDB</span>
+                                <span class="tag">API Gateway</span>
+                                <span class="tag">Amazon S3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <h3>VoteNow – Online Polling System</h3>
+                            <p>
+                                A cloud-native online polling application powered by AWS Serverless architecture. Uses
+                                Amazon S3 for hosting, API Gateway for routing, AWS Lambda for serverless compute, and
+                                DynamoDB for secure voting records with real-time analytics.
+                            </p>
+                            <div class="project-card-actions">
+                                <button class="btn-demo" data-modal="votenow-modal">
+                                    <span>Architecture &amp; Demo</span> ↗
+                                </button>
+                                <a href="https://github.com/ASaikumar2004" target="_blank" rel="noopener noreferrer"
+                                    class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: MINTHILL CAFE (ANGULAR) -->
+                    <article class="project-showcase-card reveal" data-category="angular"
+                        data-title="minthill cafe coffee website angular typescript">
+                        <div class="project-card-image">
+                            <img src="assets/minthillcafe.png" alt="Minthill Cafe Coffee Website preview">
+                            <span class="project-category-badge angular">Angular</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">Angular</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">HTML5 / CSS3</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <h3>Minthill Cafe – Coffee Website</h3>
+                            <p>
+                                Modern coffee house single-page application built with Angular and TypeScript. Features
+                                dynamic menu displays, specialty brews showcase, customer testimonials, and an engaging
+                                responsive layout.
+                            </p>
+                            <div class="project-card-actions">
+                                <a href="https://asaikumar2004.github.io/CoffeeWebsite-Angular/" target="_blank"
+                                    rel="noopener noreferrer" class="btn-demo">
+                                    <span>Live Demo</span> ↗
+                                </a>
+                                <a href="https://github.com/ASaikumar2004/CoffeeWebsite-Angular" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3: RAPIDO BOOTSTRAP CLONE -->
+                    <article class="project-showcase-card reveal" data-category="frontend"
+                        data-title="rapido bootstrap clone bike taxi cab booking html css">
+                        <div class="project-card-image">
+                            <img src="assets/rapido.jpg" alt="Rapido Bike Taxi Clone preview">
+                            <span class="project-category-badge frontend">Bootstrap</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">Bootstrap 5</span>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <h3>Rapido – Bike Taxi &amp; Cab Booking Clone</h3>
+                            <p>
+                                High-fidelity frontend clone of Rapido's ride-booking platform built with Bootstrap 5.
+                                Features location search, ride options (Bike Taxi, Auto, Cab), service showcases, and
+                                clean mobile responsiveness.
+                            </p>
+                            <div class="project-card-actions">
+                                <a href="https://rapidobootstrapdemo.vercel.app" target="_blank"
+                                    rel="noopener noreferrer" class="btn-demo">
+                                    <span>Live Demo</span> ↗
+                                </a>
+                                <a href="https://github.com/ASaikumar2004/Rapido_BootStrap" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4: ANGULAR SHOPPING CART -->
+                    <article class="project-showcase-card reveal" data-category="angular frontend"
+                        data-title="angular shopping cart ecommerce website typescript localstorage">
+                        <div class="project-card-image">
+                            <img src="assets/shopping_cart.jpg" alt="Angular Shopping Cart App preview">
+                            <span class="project-category-badge angular">Angular</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">Angular</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">LocalStorage</span>
+                                <span class="tag">State Management</span>
+                            </div>
+                            <h3>Angular E-Commerce Shopping Cart</h3>
+                            <p>
+                                Dynamic shopping cart application developed with Angular. Features interactive product
+                                browsing, real-time slide-out cart sidebar, quantity adjustments, instant price
+                                calculations, and local storage state persistence.
+                            </p>
+                            <div class="project-card-actions">
+                                <a href="https://asaikumar2004.github.io/Angularwebsite/" target="_blank"
+                                    rel="noopener noreferrer" class="btn-demo">
+                                    <span>Live Demo</span> ↗
+                                </a>
+                                <a href="https://github.com/ASaikumar2004/Angularwebsite" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 5: PUBLIC LIBRARY -->
+                    <article class="project-showcase-card reveal" data-category="angular"
+                        data-title="public library angular typescript reusable components books catalog">
+                        <div class="project-card-image">
+                            <img src="assets/library.png" alt="Public Library website preview">
+                            <span class="project-category-badge angular">Angular</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">Angular</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Reusable Components</span>
+                                <span class="tag">Page Layouts</span>
+                            </div>
+                            <h3>Public Library Platform</h3>
+                            <p>
+                                Digital library portal developed with Angular, focusing on reusable UI components,
+                                catalog filtering, book categories, digital resources, and smooth page layouts.
+                            </p>
+                            <div class="project-card-actions">
+                                <button class="btn-demo" data-modal="library-modal">
+                                    <span>Interactive Preview</span> ↗
+                                </button>
+                                <a href="https://github.com/ASaikumar2004/PublicLibrary" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 6: SPRING BOOT CRUD REST API -->
+                    <article class="project-showcase-card reveal" data-category="java"
+                        data-title="spring boot crud rest api java hibernate mysql swagger openapi">
+                        <div class="project-card-image preview-placeholder java-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">&lt;/&gt;</span>
+                                <span class="code-title">Spring Boot REST API</span>
+                            </div>
+                            <span class="project-category-badge java">Spring Boot</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">Spring Boot</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">Hibernate JPA</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Swagger</span>
+                            </div>
+                            <h3>CRUD RESTful API Service</h3>
+                            <p>
+                                Scalable backend REST API built with Spring Boot and Spring Data JPA. Features complete
+                                CRUD operations, DTO architecture, validation, error handling, JSON data handling, and
+                                Swagger/OpenAPI documentation.
+                            </p>
+                            <div class="project-card-actions">
+                                <button class="btn-demo" data-modal="restapi-modal">
+                                    <span>API Spec &amp; Endpoints</span> ↗
+                                </button>
+                                <a href="https://github.com/ASaikumar2004/RestApi" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 7: YOUTUBE CLONE -->
+                    <article class="project-showcase-card reveal" data-category="frontend"
+                        data-title="youtube clone html5 css3 flexbox grid video player ui">
+                        <div class="project-card-image preview-placeholder youtube-bg">
+                            <div class="code-badge">
+                                <span class="yt-play-icon">▶</span>
+                                <span class="code-title">YouTube Web Clone</span>
+                            </div>
+                            <span class="project-category-badge frontend">HTML / CSS</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Flexbox / Grid</span>
+                                <span class="tag">Responsive UI</span>
+                            </div>
+                            <h3>YouTube UI Clone</h3>
+                            <p>
+                                Responsive front-end clone of YouTube's video streaming platform. Styled using CSS
+                                Flexbox and Grid with sidebar navigation, header search bar, video grid cards, and clean
+                                media query breakpoints.
+                            </p>
+                            <div class="project-card-actions">
+                                <a href="https://asaikumar2004.github.io/youtubeclone/" target="_blank"
+                                    rel="noopener noreferrer" class="btn-demo">
+                                    <span>Live Demo</span> ↗
+                                </a>
+                                <a href="https://github.com/ASaikumar2004/youtubeclone" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 8: E-COMMERCE RETAIL STORE -->
+                    <article class="project-showcase-card reveal" data-category="frontend"
+                        data-title="ecommerce website html css redstore retail fashion online store">
+                        <div class="project-card-image preview-placeholder store-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">🛍️</span>
+                                <span class="code-title">RedStore E-Commerce</span>
+                            </div>
+                            <span class="project-category-badge frontend">HTML / CSS</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">E-Commerce</span>
+                                <span class="tag">Mobile Friendly</span>
+                            </div>
+                            <h3>E-Commerce Web Store</h3>
+                            <p>
+                                Complete e-commerce retail store frontend featuring categorized products, discount
+                                showcase banners, user ratings, testimonial carousel, and responsive navigation.
+                            </p>
+                            <div class="project-card-actions">
+                                <a href="https://asaikumar2004.github.io/Ecommerce-website-html-CSS/" target="_blank"
+                                    rel="noopener noreferrer" class="btn-demo">
+                                    <span>Live Demo</span> ↗
+                                </a>
+                                <a href="https://github.com/ASaikumar2004/Ecommerce-website-html-CSS" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 9: SPRING MVC & HIBERNATE WEB APP -->
+                    <article class="project-showcase-card reveal" data-category="java"
+                        data-title="spring mvc hibernate jsp servlets mysql crud web application">
+                        <div class="project-card-image preview-placeholder spring-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">🌱</span>
+                                <span class="code-title">Spring MVC Application</span>
+                            </div>
+                            <span class="project-category-badge java">Spring MVC</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">Spring MVC</span>
+                                <span class="tag">Hibernate / JPA</span>
+                                <span class="tag">JSP / Servlets</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <h3>Spring MVC &amp; Hibernate Web App</h3>
+                            <p>
+                                Full-stack enterprise web application built on Spring MVC and Hibernate ORM. Features
+                                structured Model-View-Controller architecture, JSP templates, session management, and
+                                relational database persistence.
+                            </p>
+                            <div class="project-card-actions">
+                                <button class="btn-demo" data-modal="springmvc-modal">
+                                    <span>Architecture View</span> ↗
+                                </button>
+                                <a href="https://github.com/ASaikumar2004/springmvc-" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 10: STUDENT MANAGEMENT SYSTEM -->
+                    <article class="project-showcase-card reveal" data-category="java"
+                        data-title="student management system java jsp servlets jdbc mysql crud">
+                        <div class="project-card-image preview-placeholder student-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">🎓</span>
+                                <span class="code-title">Student Management System</span>
+                            </div>
+                            <span class="project-category-badge java">Java / JDBC</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">Java</span>
+                                <span class="tag">JSP &amp; Servlets</span>
+                                <span class="tag">JDBC</span>
+                                <span class="tag">MySQL Database</span>
+                            </div>
+                            <h3>Student Management CRUD System</h3>
+                            <p>
+                                Academic record management system enabling student enrollment, record updates, search,
+                                and grade tracking. Implements MVC design pattern with JDBC connectivity to MySQL.
+                            </p>
+                            <div class="project-card-actions">
+                                <button class="btn-demo" data-modal="student-modal">
+                                    <span>System Details</span> ↗
+                                </button>
+                                <a href="https://github.com/ASaikumar2004/studentcrud" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 11: PACKAGE DELIVERY TRACKER -->
+                    <article class="project-showcase-card reveal" data-category="java"
+                        data-title="package delivery tracker core java oop mysql console billing logistics">
+                        <div class="project-card-image preview-placeholder delivery-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">📦</span>
+                                <span class="code-title">Package Delivery Tracker</span>
+                            </div>
+                            <span class="project-category-badge java">Core Java</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">Core Java</span>
+                                <span class="tag">OOP Design</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Billing Logic</span>
+                            </div>
+                            <h3>Package Delivery Tracker</h3>
+                            <p>
+                                Logistics management application built with Core Java applying Object-Oriented
+                                Programming (OOP) concepts. Manages parcel booking, tracking status, delivery agents,
+                                and automated weight/distance billing.
+                            </p>
+                            <div class="project-card-actions">
+                                <button class="btn-demo" data-modal="delivery-modal">
+                                    <span>Console Flow</span> ↗
+                                </button>
+                                <a href="https://github.com/ASaikumar2004/PackageDeliveryTracker_CoreJava"
+                                    target="_blank" rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 12: EDUCATE LEARNING PLATFORM -->
+                    <article class="project-showcase-card reveal" data-category="frontend"
+                        data-title="myproject educate learning portal online courses education html css">
+                        <div class="project-card-image preview-placeholder edu-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">📚</span>
+                                <span class="code-title">Educate Portal</span>
+                            </div>
+                            <span class="project-category-badge frontend">HTML / CSS</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Education Portal</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <h3>Educate Learning Platform</h3>
+                            <p>
+                                Online learning platform website featuring course catalogs, instructor profiles,
+                                enrollment sections, interactive student testimonials, and responsive web design.
+                            </p>
+                            <div class="project-card-actions">
+                                <a href="https://asaikumar2004.github.io/myproject-educate/" target="_blank"
+                                    rel="noopener noreferrer" class="btn-demo">
+                                    <span>Live Demo</span> ↗
+                                </a>
+                                <a href="https://github.com/ASaikumar2004/myproject-educate" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 13: REAL-TIME WEATHER APP -->
+                    <article class="project-showcase-card reveal" data-category="frontend"
+                        data-title="weather app react javascript openweather api live weather">
+                        <div class="project-card-image preview-placeholder weather-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">⛅</span>
+                                <span class="code-title">Weather App</span>
+                            </div>
+                            <span class="project-category-badge frontend">React / JS</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">React</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Weather API</span>
+                                <span class="tag">Dynamic UI</span>
+                            </div>
+                            <h3>Real-Time Weather App</h3>
+                            <p>
+                                Interactive weather application integrating OpenWeather API. Delivers instant city
+                                search, temperature, humidity, wind conditions, and dynamically animated weather
+                                condition states.
+                            </p>
+                            <div class="project-card-actions">
+                                <button class="btn-demo" data-modal="weather-modal">
+                                    <span>Interactive Preview</span> ↗
+                                </button>
+                                <a href="https://github.com/ASaikumar2004/weatherapp" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 14: PERSONAL PORTFOLIO WEBSITE -->
+                    <article class="project-showcase-card reveal" data-category="frontend"
+                        data-title="portfolio website personal developer html css javascript dark theme">
+                        <div class="project-card-image preview-placeholder portfolio-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">⚡</span>
+                                <span class="code-title">Portfolio Website</span>
+                            </div>
+                            <span class="project-category-badge frontend">HTML / CSS / JS</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">HTML5</span>
+                                <span class="tag">Vanilla CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Vercel Deploy</span>
+                            </div>
+                            <h3>Personal Portfolio Website</h3>
+                            <p>
+                                High-performance developer portfolio featuring custom dark mode design system, animated
+                                loading screen, count-up skills statistics, responsive drawer menu, and clean contact
+                                integration.
+                            </p>
+                            <div class="project-card-actions">
+                                <a href="https://ampolusaikumar.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="btn-demo">
+                                    <span>Live Demo</span> ↗
+                                </a>
+                                <a href="https://github.com/ASaikumar2004/PortFolio_WebSite" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 15: DATA STRUCTURES & ALGORITHMS (DSA) -->
+                    <article class="project-showcase-card reveal" data-category="java"
+                        data-title="dsa data structures algorithms java problem solving leetcode coding">
+                        <div class="project-card-image preview-placeholder dsa-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">🧠</span>
+                                <span class="code-title">DSA in Java</span>
+                            </div>
+                            <span class="project-category-badge java">Java / DSA</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">Core Java</span>
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">Problem Solving</span>
+                            </div>
+                            <h3>DSA &amp; Problem Solving Repository</h3>
+                            <p>
+                                Structured repository of 100+ topic-wise coding solutions covering Arrays, Linked Lists,
+                                Stacks, Queues, Binary Trees, Recursion, and Dynamic Programming with time and space
+                                complexity optimizations.
+                            </p>
+                            <div class="project-card-actions">
+                                <button class="btn-demo" data-modal="dsa-modal">
+                                    <span>Topics &amp; Solutions</span> ↗
+                                </button>
+                                <a href="https://github.com/ASaikumar2004/DSA" target="_blank" rel="noopener noreferrer"
+                                    class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 16: LUXURY WATCH STORE -->
+                    <article class="project-showcase-card reveal" data-category="frontend"
+                        data-title="watch store website luxury watches ecommerce html css flexbox">
+                        <div class="project-card-image preview-placeholder watch-bg">
+                            <div class="code-badge">
+                                <span class="code-icon">⌚</span>
+                                <span class="code-title">Luxury Watch Store</span>
+                            </div>
+                            <span class="project-category-badge frontend">HTML / CSS</span>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag tag-active">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">Modern UI</span>
+                            </div>
+                            <h3>Luxury Watch Store Website</h3>
+                            <p>
+                                Modern e-commerce showcase website designed with CSS Flexbox and Grid. Features dark
+                                minimalist luxury watch collection cards, specifications table, and smooth hover
+                                interactions.
+                            </p>
+                            <div class="project-card-actions">
+                                <button class="btn-demo" data-modal="watch-modal">
+                                    <span>Showcase Preview</span> ↗
+                                </button>
+                                <a href="https://github.com/ASaikumar2004/watchwebsite" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    <span>GitHub</span> ↗
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- NO RESULTS FOUND NOTICE -->
+                <div class="no-projects" id="noProjects" style="display: none;">
+                    <div class="no-projects-icon">🔍</div>
+                    <h3>No matching projects found</h3>
+                    <p>Try searching with another keyword or select "All Projects" to view all repositories.</p>
+                    <button class="primary-btn" id="resetFilterBtn">Reset Filters</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA CONTACT SECTION -->
+        <section class="projects-cta">
+            <div class="projects-cta-container">
+                <p class="section-label">HAVE A PROJECT IN MIND?</p>
+                <h2>Let's build something extraordinary together</h2>
+                <p>I'm available for full-time Java Full Stack opportunities and exciting web projects.</p>
+                <div class="cta-actions">
+                    <a href="index.html#contact" class="hire-btn">Get In Touch <span>→</span></a>
+                    <a href="assets/Sai_Kumar_Resume.pdf" class="download-btn" download>Download Resume ↓</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <p>&copy; <span id="footerYear"></span> Sai Kumar. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <span>Built with HTML, CSS &amp; JavaScript</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+    <!-- INTERACTIVE PROJECT MODAL (FOR ARCHITECTURE & BACKEND WALKTHROUGHS) -->
+    <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-dialog">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamically populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+</body>
+
+</html>
